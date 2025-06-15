@@ -41,7 +41,8 @@
   "success": false,
   "error": {
     "code": 1000,
-    "reason": "존재하지 않는 엔드포인트입니다."
+    "reason": "존재하지 않는 엔드포인트입니다.",
+    "timestamp": "2023-10-01T12:00:00Z"
   },
   "results": null
 }

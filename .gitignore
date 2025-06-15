@@ -35,3 +35,17 @@ out/
 
 ### VS Code ###
 .vscode/
+
+docs/
+.cursor/
+
+### Environment Variables ###
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+### Logs ###
+logs/
+*.log
