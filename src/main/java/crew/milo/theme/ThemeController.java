@@ -5,7 +5,6 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -27,7 +26,7 @@ public class ThemeController {
             description = "사용 가능한 테마 목록을 조회합니다."
     )
     @GetMapping("/v1/themes")
-    public ResponseEntity<ApiResponse<List<ThemeResponse.ThemeDetailedResponse>>> getThemes() {
+    public ResponseEntity<ApiResponse<List<ThemeResponse.ThemeInfoResponse>>> getThemes() {
         return ResponseEntity.ok().body(ApiResponse.success(themeService.getThemes()));
     }
 }

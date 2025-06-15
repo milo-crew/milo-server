@@ -13,10 +13,10 @@ public class ThemeService {
         this.themeRepository = themeRepository;
     }
 
-    public List<ThemeResponse.ThemeDetailedResponse> getThemes() {
+    public List<ThemeResponse.ThemeInfoResponse> getThemes() {
         return themeRepository.findAllActiveThemes()
                 .stream()
-                .map(theme -> ThemeResponse.ThemeDetailedResponse.from(theme, 10))
+                .map(theme -> ThemeResponse.ThemeInfoResponse.from(theme, 10))
                 .toList();
     }
 }

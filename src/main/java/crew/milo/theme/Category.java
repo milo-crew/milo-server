@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum Category {
     THEME("테마"),
-    GAME("게임"),
+    STORY("스토리"),
     ;
 
     private final String description;
